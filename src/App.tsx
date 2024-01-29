@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import { SelectedPage } from "./configs/enums";
+import Home from './components/Home';
 
 
 function App() {
@@ -20,7 +21,10 @@ function App() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
-  return <div className="app"><Navbar selectedPage={selectedPage} setSelectedPage={handleSelectedPage}  isTopOfPage={isTopOfPage} /></div>;
+  return <div className="app">
+    <Navbar selectedPage={selectedPage} setSelectedPage={handleSelectedPage}  isTopOfPage={isTopOfPage} />
+    <Home setSelectedPage={handleSelectedPage} />
+    </div>;
 }
 
 export default App;
