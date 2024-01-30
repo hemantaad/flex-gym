@@ -23,12 +23,12 @@ const Home = ({ setSelectedPage }: Props) => {
         onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
       >
         {/* MAIN HEADER */}
-        <div className="z-50 mt-32 lg:basis-3/5">
+        <div className="z-10 mt-32 lg:basis-3/5">
           {/* HEADING */}
 
           <div className="lg:-mt-20">
             <div className="relative">
-              <div className="before:absolute before:-top-20 before:-left-20 before:z-[-50] lg:before:content-evolvetext">
+              <div className="before:absolute before:-top-20 before:-left-20 before:z-[-10] lg:before:content-evolvetext">
                 <img src={HomePageText} alt="home-page-text" />
               </div>
             </div>
@@ -56,7 +56,7 @@ const Home = ({ setSelectedPage }: Props) => {
 
         {/* IMAGE */}
 
-        <div className="flex basis:3/5 justify-center lg:ml-40 lg:mt-16 lg:justify-items-end lg:z-50">
+        <div className="flex basis:3/5 justify-center lg:ml-40 lg:mt-16 lg:justify-items-end lg:z-10">
           <img src={HomePageGraphics} alt="home-page-graphics" />
         </div>
       </motion.div>
