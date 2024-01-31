@@ -24,7 +24,7 @@ interface Props {
 
 const Contact = ({ setSelectedPage }: Props) => {
   const inputStyles =
-    "mt-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white";
+    "mb-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white";
 
   const {
     register,
@@ -97,12 +97,14 @@ const Contact = ({ setSelectedPage }: Props) => {
               </button>
             </form>
           </div>
-          <div className="mt-16 basis2/5 lg:mt-0">
-            <img
-              className="w-full"
-              src={ContactUsPageGraphic}
-              alt="sontact-us-graphics"
-            />
+          <div className="relative mt-16 basis2/5 lg:mt-0">
+            <div className="lg:before:content-evolvetext w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1]">
+              <img
+                className="w-full"
+                src={ContactUsPageGraphic}
+                alt="sontact-us-graphics"
+              />
+            </div>
           </div>
         </div>
       </motion.div>
