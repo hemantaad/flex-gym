@@ -4,6 +4,7 @@ import { SelectedPage } from "./configs/enums";
 import Home from "./components/Home";
 import Benefits from "./components/Benefits";
 import Classes from "./components/Classes";
+import Contact from "./components/Contact";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState(SelectedPage.Home);
@@ -32,6 +33,7 @@ function App() {
       <Home setSelectedPage={handleSelectedPage} />
       <Benefits setSelectedPage={handleSelectedPage} />
       <Classes setSelectedPage={handleSelectedPage} />
+      <Contact setSelectedPage={handleSelectedPage} />
     </div>
   );
 }
